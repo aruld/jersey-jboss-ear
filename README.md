@@ -30,7 +30,7 @@ Build and Deploy the EAR
 
         mvn clean package jboss-as:deploy
 
-4. This will deploy `target/jersey-jboss-ear.ear` to the running instance of the server.
+4. This will deploy `jersey-jboss-ear-ear/target/jersey-jboss-ear.ear` to the running instance of the server.
 
 
 Access the application
@@ -98,3 +98,31 @@ You should see messages similar to the following:
     21:49:21,305 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /jersey-jboss-ear-web
     21:49:21,334 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018559: Deployed "jersey-jboss-ear.ear"
 
+
+Structure of the EAR
+--------------------
+
+jar tvf jersey-jboss-ear.ear
+----------------------------
+``
+  created: META-INF/
+ inflated: META-INF/MANIFEST.MF
+ inflated: jersey-jboss-ear-web-1.0-SNAPSHOT.war
+ inflated: META-INF/application.xml
+``
+
+jar tvf jersey-jboss-ear-web-1.0-SNAPSHOT.war
+---------------------------------------------
+``
+     0 Fri Jan 18 22:03:56 HST 2013 META-INF/
+   123 Fri Jan 18 22:03:54 HST 2013 META-INF/MANIFEST.MF
+     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/
+     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/classes/
+     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/
+ 43033 Mon Oct 01 14:14:58 HST 2012 WEB-INF/lib/asm-3.1.jar
+467058 Fri Dec 21 11:44:32 HST 2012 WEB-INF/lib/jersey-core-1.16.jar
+  3750 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/jersey-jboss-ear-web-1.0-SNAPSHOT.jar
+605737 Fri Dec 21 11:44:30 HST 2012 WEB-INF/lib/jersey-server-1.16.jar
+125544 Fri Dec 21 11:44:36 HST 2012 WEB-INF/lib/jersey-servlet-1.16.jar
+  1323 Fri Jan 18 22:02:04 HST 2013 WEB-INF/web.xml
+``
