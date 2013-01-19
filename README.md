@@ -102,27 +102,23 @@ You should see messages similar to the following:
 Structure of the EAR
 --------------------
 
-jar tvf jersey-jboss-ear.ear
-----------------------------
-``
-  created: META-INF/
- inflated: META-INF/MANIFEST.MF
- inflated: jersey-jboss-ear-web-1.0-SNAPSHOT.war
- inflated: META-INF/application.xml
-``
+jersey-jboss-ear.ear
+--------------------
+      created: META-INF/
+     inflated: META-INF/MANIFEST.MF
+     inflated: jersey-jboss-ear-web-1.0-SNAPSHOT.war
+     inflated: META-INF/application.xml
 
-jar tvf jersey-jboss-ear-web-1.0-SNAPSHOT.war
----------------------------------------------
-``
-     0 Fri Jan 18 22:03:56 HST 2013 META-INF/
-   123 Fri Jan 18 22:03:54 HST 2013 META-INF/MANIFEST.MF
-     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/
-     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/classes/
-     0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/
- 43033 Mon Oct 01 14:14:58 HST 2012 WEB-INF/lib/asm-3.1.jar
-467058 Fri Dec 21 11:44:32 HST 2012 WEB-INF/lib/jersey-core-1.16.jar
-  3750 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/jersey-jboss-ear-web-1.0-SNAPSHOT.jar
-605737 Fri Dec 21 11:44:30 HST 2012 WEB-INF/lib/jersey-server-1.16.jar
-125544 Fri Dec 21 11:44:36 HST 2012 WEB-INF/lib/jersey-servlet-1.16.jar
-  1323 Fri Jan 18 22:02:04 HST 2013 WEB-INF/web.xml
-``
+jersey-jboss-ear-web-1.0-SNAPSHOT.war
+-------------------------------------
+         0 Fri Jan 18 22:03:56 HST 2013 META-INF/
+       123 Fri Jan 18 22:03:54 HST 2013 META-INF/MANIFEST.MF
+         0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/
+         0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/classes/
+         0 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/
+     43033 Mon Oct 01 14:14:58 HST 2012 WEB-INF/lib/asm-3.1.jar
+    467058 Fri Dec 21 11:44:32 HST 2012 WEB-INF/lib/jersey-core-1.16.jar
+      3750 Fri Jan 18 22:03:54 HST 2013 WEB-INF/lib/jersey-jboss-ear-web-1.0-SNAPSHOT.jar
+    605737 Fri Dec 21 11:44:30 HST 2012 WEB-INF/lib/jersey-server-1.16.jar
+    125544 Fri Dec 21 11:44:36 HST 2012 WEB-INF/lib/jersey-servlet-1.16.jar
+      1323 Fri Jan 18 22:02:04 HST 2013 WEB-INF/web.xml
